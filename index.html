@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Biblia Sagrada</title><br>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link rel="icon" href="images/bible.ico">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Painel Menu -->
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h2 class="text-center"><b>Bíblia Sagrada</b></h2>
+  </div>
+  <div class="panel-body">
+    <div id="livros" class="list-group">
+      <img class='center-block' src='http://bestanimations.com/Science/Gears/loadinggears/gear-animation-orange.gif#.Ws0loQKVx5M.link'>
+    </div>
+  </div>
+</div>
+<!-- Fim painel menu -->
+
+<!-- Modal Apresenta capitolos do livro escolhido-->
+<div class="modal fade" id="modalCapitulos" tabindex="-1" role="dialog" >
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <div class="pull-right btn-group" role="group" aria-label="...">
+          <button id="prev" type="button" class="btn btn-default"><i class="glyphicon glyphicon-menu-left"></i></button>
+          <button id="next" type="button" class="btn btn-default"><i class="glyphicon glyphicon-menu-right"></i></button>
+
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span id="capituloAtual">1</span>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+            </ul>
+          </div>
+        </div>
+        <h4 class="modal-title" id="labelCapitulo">Título do modal</h4>
+      </div>
+      <div class="modal-body">
+        <ul class="list-group"></ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fim modal capitulos -->
+
+
+<!-- Modal Compartilhar vercículo-->
+<div class="modal fade" id="modalCompartilhar" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Compartilhar</h4>
+      </div>
+      <div class="modal-body">
+        <blockquote class="blockquote-reverse">
+          <h2>
+            <i class="fa fa-quote-left"> </i> <span id="text">verciculo</span>
+              
+          </h2>
+          <footer>referencia</cite></footer>
+        </blockquote>
+      </div>
+      <div class="modal-footer">
+       <div class="pull-left">
+        <a class="btn btn-primary" id="tweet-quote" title="Tweet este vercículo!" target="_blank">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="btn btn-success" id="whats-quote" title="Compartilhe no Whatsapp" target="_blank">
+          <i class="fa fa-whatsapp"></i>
+        </a>
+        </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim Modal compartilhar verciculo -->
+<div class="text-center"> .</a></div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="./script.js"></script>
+
+<footer>
+  <p class="text-center"><strong><em>Jm Codes</em></strong></p>
+  <p class="text-center"><strong>Copyright &copy;2024</strong></p>
+  <p class="text-center"><a href="https://github.com/lorinznn" target="_blank"><strong><em>Saiba mais sobre o Projeto</em></strong></a></p>
+</footer>
+
+</body>
+</html>
